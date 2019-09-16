@@ -8,7 +8,23 @@ body {
   height: 100vh;
   background-color: #1f2833;
 }
-#logo_text,
+#logo_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .......................................................................... */
+#logo_text {
+  animation: fill_anim 0.5s ease forwards 4.5s;
+}
+#logo_text mask {
+  animation: fill_anim 0.5s ease forwards 4.5s;
+}
+#logo_text mask rect {
+  animation: fill_anim 0.5s ease forwards 4.5s;
+}
+/* ........................................................................ */
 #logo_rect {
   position: absolute;
   left: 50%;
@@ -49,6 +65,11 @@ body {
 @keyframes logo_text_anim {
   100% {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes fill_anim {
+  100% {
+    fill: #66fcf1;
   }
 }
 @keyframes logo_rect_anim {
