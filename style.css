@@ -1,66 +1,350 @@
+@font-face {
+  font-family: Exo-R;
+  src: url(Exo-Regular.ttf);
+}
+@font-face {
+  font-family: Exo-B;
+  src: url(Exo-Bold.ttf);
+}
+@font-face {
+  font-family: Exo-SB;
+  src: url(Exo-SemiBold.ttf);
+}
+:root {
+  --clip-portfolio-div-XY: 0px 0px;
+  --clip-about-div-XY: 0px 0px;
+  --clip-services-div-XY: 0px 0px;
+  --clip-home-div-XY: 0px 0px;
+  --clip-contact-div-XY: 0px 0px;
+  --color-bg1: #0b0c10;
+  --color-bg2: #1f2833;
+  --color-1: #c5c6c7;
+  --color-2: #66fcf1;
+  --color-3: #45a29e;
+  --color-bg3: #247ba0;
+  --color-bg4: #70c1b3;
+  --color-4: #b2dbbf;
+  --color-5: #f3ffbd;
+  --color-6: #ff1654;
+}
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
 body {
+  position: relative;
+  /* background-color: var(--color-bg2); */
+}
+/* ........................portfolio........................... */
+#portfolio-div {
+  position: absolute;
   width: 100%;
-  height: 100vh;
-  background-color: #1f2833;
+  height: 100%;
+  background-color: var(--color-bg2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  clip-path: circle(2.75rem at var(--clip-portfolio-div-XY));
+  /* visibility: hidden; */
 }
-#logo_text {
+#portfolio-div.open {
+  clip-path: circle(150%);
+}
+#portfolio-btn {
+  z-index: 3;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
+  /* overflow: hidden; */
+  /* transition-property: background-color, color, border-color, border-radius; */
+  /* transition-duration: 1s; */
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: var(--color-2);
+  color: var(--color-2);
+  font-family: Exo-B;
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-bg2);
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 10px;
+}
+/* ....................About.......................... */
+#about-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  clip-path: circle(2.75rem at var(--clip-about-div-XY));
+  /* visibility: hidden; */
+}
+#about-div.open {
+  clip-path: circle(150%);
+}
+#about-btn {
+  z-index: 3;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
+  /* overflow: hidden; */
+  /* transition-property: background-color, color, border-color, border-radius; */
+  /* transition-duration: 1s; */
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: var(--color-2);
+  color: var(--color-2);
+  font-family: Exo-B;
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-bg2);
+  transform: translate(-50%, 0);
+  left: calc(50% - 98px);
+  top: 10px;
+}
+/* ...............................Services...................... */
+#services-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  clip-path: circle(2.75rem at var(--clip-services-div-XY));
+  /* visibility: hidden; */
+}
+#services-div.open {
+  clip-path: circle(150%);
+}
+#services-btn {
+  z-index: 3;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
+  /* overflow: hidden; */
+  /* transition-property: background-color, color, border-color, border-radius; */
+  /* transition-duration: 1s; */
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: var(--color-2);
+  color: var(--color-2);
+  font-family: Exo-B;
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-bg2);
+  transform: translate(-50%, 0);
+  left: calc(50% + 98px);
+  top: 10px;
+}
+/* ...............................Home...................... */
+#home-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: aliceblue; */
+  background-color: var(--color-bg2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  /* clip-path: circle(2.75em at var(--clip-home-div-XY)); */
+  /* visibility: hidden; */
+}
+#home-div.open {
+  clip-path: circle(150%);
+}
+#home-btn {
+  z-index: 3;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
+  /* overflow: hidden; */
+  /* transition-property: background-color, color, border-color, border-radius; */
+  /* transition-duration: 1s; */
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: var(--color-2);
+  color: var(--color-2);
+  font-family: Exo-B;
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-bg2);
+  transform: translate(-50%, 0);
+  left: calc(50% - 196px);
+  top: 10px;
+}
+/* ...............................Contact...................... */
+#contact-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg2);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.6s;
+  clip-path: circle(2.75rem at var(--clip-contact-div-XY));
+  /* visibility: hidden; */
+}
+#contact-div.open {
+  clip-path: circle(150%);
+}
+#contact-btn {
+  z-index: 3;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
+  /* overflow: hidden; */
+  /* transition-property: background-color, color, border-color, border-radius; */
+  /* transition-duration: 1s; */
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: var(--color-2);
+  color: var(--color-2);
+  font-family: Exo-B;
+  padding: 8px;
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-bg2);
+  transform: translate(-50%, 0);
+  left: calc(50% + 196px);
+  top: 10px;
+}
+/*      ...btn hover...      */
+#contact-btn:hover,
+#home-btn:hover,
+#services-btn:hover,
+#about-btn:hover,
+#portfolio-btn:hover {
+  color: var(--color-3);
+  border-color: var(--color-3);
+}
+/*      ...Home Div logo... */
+#logo-rect {
+  width: calc(56px * 6);
+  height: calc(39px * 6);
+  position: absolute;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  /* transform: translate(-15%, -50%); */
+  stroke-dasharray: 745px;
+  stroke-dashoffset: 745px;
+  animation: logo_rect_slide 2s ease-in-out forwards 6s;
 }
-/* .......................................................................... */
-#logo_text {
-  animation: fill_anim 0.5s ease forwards 4.5s;
+#logo-rect rect {
+  animation: logo_rect_anim 6s ease forwards;
 }
-#logo_text mask {
-  animation: fill_anim 0.5s ease forwards 4.5s;
-}
-#logo_text mask rect {
-  animation: fill_anim 0.5s ease forwards 4.5s;
-}
-/* ........................................................................ */
-#logo_rect {
+#logo-text {
+  transition: all 1s ease-in-out;
+  width: calc(97px * 3);
+  height: calc(67px * 3);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-#logo_text path:nth-child(2) {
-  stroke-dasharray: 492.9971px;
-  stroke-dashoffset: 492.9971px;
-  animation: logo_text_anim 5s ease forwards;
+  /* transform: translate(-10%, -50%); */
+  animation: fill_anim 2s ease forwards 5.5s,
+    logo_text_slide 2s ease-in-out forwards 6s;
 }
 
-#logo_text path:nth-child(3) {
-  stroke-dasharray: 250.7277px;
-  stroke-dashoffset: 250.7277px;
-  animation: logo_text_anim 5s ease forwards 0.3s;
+#logo-text path:nth-child(5) {
+  stroke: var(--color-2);
+  stroke-dasharray: 493px;
+  stroke-dashoffset: 493px;
+  animation: logo_text_anim 6s ease forwards;
 }
-#logo_text path:nth-child(4) {
-  stroke-dasharray: 202.8685px;
-  stroke-dashoffset: 202.8685px;
-  animation: logo_text_anim 5s ease forwards 0.6s;
+#logo-text path:nth-child(1) {
+  stroke: var(--color-2);
+  stroke-dasharray: 251px;
+  stroke-dashoffset: 251px;
+  animation: logo_text_anim 6s ease forwards 0.5s;
 }
-#logo_text path:nth-child(5) {
-  stroke-dasharray: 482.1142px;
-  stroke-dashoffset: 482.1142px;
-  animation: logo_text_anim 5s ease forwards 0.9s;
+#logo-text path:nth-child(3) {
+  stroke: var(--color-2);
+  stroke-dasharray: 203px;
+  stroke-dashoffset: 203px;
+  animation: logo_text_anim 6s ease forwards 1s;
 }
-#logo_text path:nth-child(6) {
-  stroke-dasharray: 390.3233px;
-  stroke-dashoffset: 390.3233px;
-  animation: logo_text_anim 5s ease forwards 1.2s;
+#logo-text path:nth-child(4) {
+  stroke: var(--color-2);
+  stroke-dasharray: 483px;
+  stroke-dashoffset: 483px;
+  animation: logo_text_anim 6s ease forwards 1.5s;
 }
-#logo_rect rect {
-  stroke-dasharray: 1560px;
-  stroke-dashoffset: 1560px;
-  animation: logo_rect_anim 5s ease forwards;
+#logo-text path:nth-child(2) {
+  stroke: var(--color-2);
+  stroke-dasharray: 391px;
+  stroke-dashoffset: 391px;
+  animation: logo_text_anim 6s ease forwards 2s;
+}
+#img-frm {
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  /* width: calc(37px * 6);
+  height: calc(37px * 6); */
+  width: calc(56px * 6);
+  height: calc(37px * 6);
+  border: 4px solid var(--color-2);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translate(-125%, -50%); */
+  animation: img_slide 2s ease-in-out forwards 6s;
+}
+#img-frm img {
+  opacity: 0;
+  width: calc(37px * 6);
+  height: calc(37px * 6);
+  animation: img 2s ease-in-out forwards 7s;
+}
+
+/*      ...Animation Keyframes...        */
+@keyframes logo_text_slide {
+  100% {
+    transform: translate(-10%, -50%);
+  }
+}
+@keyframes logo_rect_slide {
+  100% {
+    transform: translate(-15%, -50%);
+  }
+}
+@keyframes img_slide {
+  100% {
+    opacity: 1;
+    transform: translate(-125%, -50%);
+    width: calc(37px * 6);
+    height: calc(37px * 6);
+  }
+}
+@keyframes img {
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes logo_text_anim {
   100% {
@@ -69,7 +353,7 @@ body {
 }
 @keyframes fill_anim {
   100% {
-    fill: #66fcf1;
+    fill: var(--color-2);
   }
 }
 @keyframes logo_rect_anim {
@@ -90,6 +374,109 @@ body {
   }
   100% {
     stroke-dashoffset: 0;
-    stroke: #66fcf1;
+    stroke: var(--color-2);
+  }
+}
+/*      ...@Media Rule...      */
+@media screen and (max-width: 500px) {
+  #portfolio-div {
+    clip-path: circle(1.75rem at var(--clip-portfolio-div-XY));
+  }
+  #about-div {
+    clip-path: circle(1.75rem at var(--clip-about-div-XY));
+  }
+  /* #home-div {
+    clip-path: circle(1.75rem at var(--clip-home-div-XY));
+  } */
+  #contact-div {
+    clip-path: circle(1.75rem at var(--clip-contact-div-XY));
+  }
+  #services-div {
+    clip-path: circle(1.75rem at var(--clip-services-div-XY));
+  }
+  #portfolio-btn {
+    font-size: 0.7rem;
+    top: 6px;
+    font-family: Exo-SB;
+    padding: 4px;
+  }
+  #contact-btn {
+    font-size: 0.7rem;
+    left: calc(50% + 130.375px);
+    top: 6px;
+    font-family: Exo-SB;
+    padding: 4px;
+  }
+  #home-btn {
+    font-size: 0.7rem;
+    left: calc(50% - 130.375px);
+    top: 6px;
+    font-family: Exo-SB;
+    padding: 4px;
+  }
+  #about-btn {
+    font-size: 0.7rem;
+    left: calc(50% - 65.1875px);
+    top: 6px;
+    font-family: Exo-SB;
+    padding: 4px;
+  }
+  #services-btn {
+    font-size: 0.7rem;
+    left: calc(50% + 65.1875px);
+    top: 6px;
+    font-family: Exo-SB;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #portfolio-div {
+    clip-path: circle(1.5rem at var(--clip-portfolio-div-XY));
+  }
+  #about-div {
+    clip-path: circle(1.5rem at var(--clip-about-div-XY));
+  }
+  #home-div {
+    clip-path: circle(1.5rem at var(--clip-home-div-XY));
+  }
+  #contact-div {
+    clip-path: circle(1.5rem at var(--clip-contact-div-XY));
+  }
+  #services-div {
+    clip-path: circle(1.5rem at var(--clip-services-div-XY));
+  }
+  #portfolio-btn {
+    font-size: 0.6rem;
+    top: 6px;
+    font-family: Exo-R;
+    padding: 2px;
+  }
+  #contact-btn {
+    font-size: 0.6rem;
+    left: calc(50% + 112.78125px);
+    top: 6px;
+    font-family: Exo-R;
+    padding: 2px;
+  }
+  #home-btn {
+    font-size: 0.6rem;
+    left: calc(50% - 112.78125px);
+    top: 6px;
+    font-family: Exo-R;
+    padding: 2px;
+  }
+  #about-btn {
+    font-size: 0.6rem;
+    left: calc(50% - 56.390625px);
+    top: 6px;
+    font-family: Exo-R;
+    padding: 2px;
+  }
+  #services-btn {
+    font-size: 0.6rem;
+    left: calc(50% + 56.390625px);
+    top: 6px;
+    font-family: Exo-R;
+    padding: 2px;
   }
 }
