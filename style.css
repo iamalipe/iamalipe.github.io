@@ -16,16 +16,16 @@
   --clip-services-div-XY: 0px 0px;
   --clip-home-div-XY: 0px 0px;
   --clip-contact-div-XY: 0px 0px;
-  --color-bg1: #0b0c10;
-  --color-bg2: #1f2833;
-  --color-1: #c5c6c7;
-  --color-2: #66fcf1;
-  --color-3: #45a29e;
-  --color-bg3: #247ba0;
-  --color-bg4: #70c1b3;
-  --color-4: #b2dbbf;
-  --color-5: #f3ffbd;
-  --color-6: #ff1654;
+  --set1-color-bg1: #0b0c10;
+  --set1-color-bg2: #1f2833;
+  --set1-color-1: #c5c6c7;
+  --set1-color-2: #66fcf1;
+  --set1-color-3: #45a29e;
+  --set2-color-bg1: #247ba0;
+  --set2-color-bg2: #70c1b3;
+  --set2-color-1: #b2dbbf;
+  --set2-color-2: #f3ffbd;
+  --set2-color-3: #ff1654;
 }
 * {
   padding: 0;
@@ -33,16 +33,16 @@
 }
 body {
   position: relative;
-  /* background-color: var(--color-bg2); */
+  /* background-color: var(--set1-color-bg2); */
 }
 /* ........................portfolio........................... */
 #portfolio-div {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-1);
   transition-timing-function: ease-in-out;
-  transition-duration: 0.6s;
+  transition-duration: 2s;
   clip-path: circle(2.75rem at var(--clip-portfolio-div-XY));
   /* visibility: hidden; */
 }
@@ -57,19 +57,19 @@ body {
   cursor: pointer;
   outline: none;
   /* overflow: hidden; */
-  /* transition-property: background-color, color, border-color, border-radius; */
-  /* transition-duration: 1s; */
-  border-radius: 50%;
+  transition-property: background-color, color, border-color, border-radius;
+  transition-duration: 2s;
+  border-radius: 10%;
   border: 4px solid;
-  border-color: var(--color-2);
-  color: var(--color-2);
+  border-color: var(--set1-color-2);
+  color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
   line-height: 4rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transform: translate(-50%, 0);
   left: 50%;
   top: 10px;
@@ -79,7 +79,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transition-timing-function: ease-in-out;
   transition-duration: 0.6s;
   clip-path: circle(2.75rem at var(--clip-about-div-XY));
@@ -96,19 +96,19 @@ body {
   cursor: pointer;
   outline: none;
   /* overflow: hidden; */
-  /* transition-property: background-color, color, border-color, border-radius; */
-  /* transition-duration: 1s; */
-  border-radius: 50%;
+  transition-property: background-color, color, border-color, border-radius;
+  transition-duration: 2s;
+  border-radius: 10%;
   border: 4px solid;
-  border-color: var(--color-2);
-  color: var(--color-2);
+  border-color: var(--set1-color-2);
+  color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
   line-height: 4rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transform: translate(-50%, 0);
   left: calc(50% - 98px);
   top: 10px;
@@ -118,7 +118,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transition-timing-function: ease-in-out;
   transition-duration: 0.6s;
   clip-path: circle(2.75rem at var(--clip-services-div-XY));
@@ -135,19 +135,19 @@ body {
   cursor: pointer;
   outline: none;
   /* overflow: hidden; */
-  /* transition-property: background-color, color, border-color, border-radius; */
-  /* transition-duration: 1s; */
-  border-radius: 50%;
+  transition-property: background-color, color, border-color, border-radius;
+  transition-duration: 2s;
+  border-radius: 10%;
   border: 4px solid;
-  border-color: var(--color-2);
-  color: var(--color-2);
+  border-color: var(--set1-color-2);
+  color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
   line-height: 4rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transform: translate(-50%, 0);
   left: calc(50% + 98px);
   top: 10px;
@@ -158,7 +158,7 @@ body {
   width: 100%;
   height: 100%;
   /* background-color: aliceblue; */
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transition-timing-function: ease-in-out;
   transition-duration: 0.6s;
   /* clip-path: circle(2.75em at var(--clip-home-div-XY)); */
@@ -175,19 +175,19 @@ body {
   cursor: pointer;
   outline: none;
   /* overflow: hidden; */
-  /* transition-property: background-color, color, border-color, border-radius; */
-  /* transition-duration: 1s; */
-  border-radius: 50%;
+  transition-property: background-color, color, border-color, border-radius;
+  transition-duration: 2s;
+  border-radius: 10%;
   border: 4px solid;
-  border-color: var(--color-2);
-  color: var(--color-2);
+  border-color: var(--set1-color-2);
+  color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
   line-height: 4rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transform: translate(-50%, 0);
   left: calc(50% - 196px);
   top: 10px;
@@ -197,7 +197,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transition-timing-function: ease-in-out;
   transition-duration: 0.6s;
   clip-path: circle(2.75rem at var(--clip-contact-div-XY));
@@ -214,19 +214,19 @@ body {
   cursor: pointer;
   outline: none;
   /* overflow: hidden; */
-  /* transition-property: background-color, color, border-color, border-radius; */
-  /* transition-duration: 1s; */
-  border-radius: 50%;
+  transition-property: background-color, color, border-color, border-radius;
+  transition-duration: 2s;
+  border-radius: 10%;
   border: 4px solid;
-  border-color: var(--color-2);
-  color: var(--color-2);
+  border-color: var(--set1-color-2);
+  color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
   line-height: 4rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-bg2);
+  background-color: var(--set1-color-bg2);
   transform: translate(-50%, 0);
   left: calc(50% + 196px);
   top: 10px;
@@ -237,8 +237,9 @@ body {
 #services-btn:hover,
 #about-btn:hover,
 #portfolio-btn:hover {
-  color: var(--color-3);
-  border-color: var(--color-3);
+  border-radius: 50%;
+  color: var(--set1-color-3);
+  border-color: var(--set1-color-3);
 }
 /*      ...Home Div logo... */
 #logo-rect {
@@ -271,31 +272,31 @@ body {
 }
 
 #logo-text path:nth-child(5) {
-  stroke: var(--color-2);
+  stroke: var(--set1-color-2);
   stroke-dasharray: 493px;
   stroke-dashoffset: 493px;
   animation: logo_text_anim 6s ease forwards;
 }
 #logo-text path:nth-child(1) {
-  stroke: var(--color-2);
+  stroke: var(--set1-color-2);
   stroke-dasharray: 251px;
   stroke-dashoffset: 251px;
   animation: logo_text_anim 6s ease forwards 0.5s;
 }
 #logo-text path:nth-child(3) {
-  stroke: var(--color-2);
+  stroke: var(--set1-color-2);
   stroke-dasharray: 203px;
   stroke-dashoffset: 203px;
   animation: logo_text_anim 6s ease forwards 1s;
 }
 #logo-text path:nth-child(4) {
-  stroke: var(--color-2);
+  stroke: var(--set1-color-2);
   stroke-dasharray: 483px;
   stroke-dashoffset: 483px;
   animation: logo_text_anim 6s ease forwards 1.5s;
 }
 #logo-text path:nth-child(2) {
-  stroke: var(--color-2);
+  stroke: var(--set1-color-2);
   stroke-dasharray: 391px;
   stroke-dashoffset: 391px;
   animation: logo_text_anim 6s ease forwards 2s;
@@ -308,7 +309,7 @@ body {
   height: calc(37px * 6); */
   width: calc(56px * 6);
   height: calc(37px * 6);
-  border: 4px solid var(--color-2);
+  border: 4px solid var(--set1-color-2);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -353,7 +354,7 @@ body {
 }
 @keyframes fill_anim {
   100% {
-    fill: var(--color-2);
+    fill: var(--set1-color-2);
   }
 }
 @keyframes logo_rect_anim {
@@ -374,7 +375,7 @@ body {
   }
   100% {
     stroke-dashoffset: 0;
-    stroke: var(--color-2);
+    stroke: var(--set1-color-2);
   }
 }
 /*      ...@Media Rule...      */
