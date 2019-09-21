@@ -43,7 +43,7 @@ body {
   background-color: var(--set1-color-1);
   transition-timing-function: ease-in-out;
   transition-duration: 2s;
-  clip-path: circle(2.75rem at var(--clip-portfolio-div-XY));
+  clip-path: circle(0.1rem at var(--clip-portfolio-div-XY));
   /* visibility: hidden; */
 }
 #portfolio-div.open {
@@ -53,20 +53,21 @@ body {
   z-index: 3;
   position: absolute;
   width: 4rem;
-  height: 4rem;
+  height: 2rem;
   cursor: pointer;
   outline: none;
-  /* overflow: hidden; */
-  transition-property: background-color, color, border-color, border-radius;
-  transition-duration: 2s;
+  overflow: hidden;
+  transition-property: font-size, line-height, height, padding, width,
+    background-color, color, border-color, border-radius;
+  transition-duration: 1s;
   border-radius: 10%;
-  border: 4px solid;
+  border: 2px solid;
   border-color: var(--set1-color-2);
   color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
-  line-height: 4rem;
+  line-height: 2rem;
   text-align: center;
   text-decoration: none;
   background-color: var(--set1-color-bg2);
@@ -79,10 +80,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--set1-color-bg2);
+  background-color: var(--set1-color-1);
   transition-timing-function: ease-in-out;
-  transition-duration: 0.6s;
-  clip-path: circle(2.75rem at var(--clip-about-div-XY));
+  transition-duration: 2s;
+  clip-path: circle(0.1rem at var(--clip-about-div-XY));
   /* visibility: hidden; */
 }
 #about-div.open {
@@ -92,20 +93,21 @@ body {
   z-index: 3;
   position: absolute;
   width: 4rem;
-  height: 4rem;
+  height: 2rem;
   cursor: pointer;
   outline: none;
-  /* overflow: hidden; */
-  transition-property: background-color, color, border-color, border-radius;
-  transition-duration: 2s;
+  overflow: hidden;
+  transition-property: font-size, line-height, height, padding, width,
+    background-color, color, border-color, border-radius;
+  transition-duration: 1s;
   border-radius: 10%;
-  border: 4px solid;
+  border: 2px solid;
   border-color: var(--set1-color-2);
   color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
-  line-height: 4rem;
+  line-height: 2rem;
   text-align: center;
   text-decoration: none;
   background-color: var(--set1-color-bg2);
@@ -118,10 +120,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--set1-color-bg2);
+  background-color: var(--set1-color-1);
   transition-timing-function: ease-in-out;
-  transition-duration: 0.6s;
-  clip-path: circle(2.75rem at var(--clip-services-div-XY));
+  transition-duration: 2s;
+  clip-path: circle(0.1rem at var(--clip-services-div-XY));
   /* visibility: hidden; */
 }
 #services-div.open {
@@ -131,20 +133,21 @@ body {
   z-index: 3;
   position: absolute;
   width: 4rem;
-  height: 4rem;
+  height: 2rem;
   cursor: pointer;
   outline: none;
-  /* overflow: hidden; */
-  transition-property: background-color, color, border-color, border-radius;
-  transition-duration: 2s;
+  overflow: hidden;
+  transition-property: font-size, line-height, height, padding, width,
+    background-color, color, border-color, border-radius;
+  transition-duration: 1s;
   border-radius: 10%;
-  border: 4px solid;
+  border: 2px solid;
   border-color: var(--set1-color-2);
   color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
-  line-height: 4rem;
+  line-height: 2rem;
   text-align: center;
   text-decoration: none;
   background-color: var(--set1-color-bg2);
@@ -171,20 +174,21 @@ body {
   z-index: 3;
   position: absolute;
   width: 4rem;
-  height: 4rem;
+  height: 2rem;
   cursor: pointer;
   outline: none;
-  /* overflow: hidden; */
-  transition-property: background-color, color, border-color, border-radius;
-  transition-duration: 2s;
+  overflow: hidden;
+  transition-property: font-size, line-height, height, padding, width,
+    background-color, color, border-color, border-radius;
+  transition-duration: 1s;
   border-radius: 10%;
-  border: 4px solid;
+  border: 2px solid;
   border-color: var(--set1-color-2);
   color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
-  line-height: 4rem;
+  line-height: 2rem;
   text-align: center;
   text-decoration: none;
   background-color: var(--set1-color-bg2);
@@ -197,10 +201,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--set1-color-bg2);
+  background-color: var(--set1-color-1);
   transition-timing-function: ease-in-out;
-  transition-duration: 0.6s;
-  clip-path: circle(2.75rem at var(--clip-contact-div-XY));
+  transition-duration: 2s;
+  clip-path: circle(0.1rem at var(--clip-contact-div-XY));
   /* visibility: hidden; */
 }
 #contact-div.open {
@@ -210,20 +214,21 @@ body {
   z-index: 3;
   position: absolute;
   width: 4rem;
-  height: 4rem;
+  height: 2rem;
   cursor: pointer;
   outline: none;
-  /* overflow: hidden; */
-  transition-property: background-color, color, border-color, border-radius;
-  transition-duration: 2s;
+  overflow: hidden;
+  transition-property: font-size, line-height, height, padding, width,
+    background-color, color, border-color, border-radius;
+  transition-duration: 1s;
   border-radius: 10%;
-  border: 4px solid;
+  border: 2px solid;
   border-color: var(--set1-color-2);
   color: var(--set1-color-2);
   font-family: Exo-B;
   padding: 8px;
   font-size: 1rem;
-  line-height: 4rem;
+  line-height: 2rem;
   text-align: center;
   text-decoration: none;
   background-color: var(--set1-color-bg2);
@@ -237,6 +242,11 @@ body {
 #services-btn:hover,
 #about-btn:hover,
 #portfolio-btn:hover {
+  font-size: 0.6rem;
+  line-height: 3rem;
+  height: 3rem;
+  padding: 4px;
+  width: 3rem;
   border-radius: 50%;
   color: var(--set1-color-3);
   border-color: var(--set1-color-3);
